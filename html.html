@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+        <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        </head>
+<body>
+  <h1>מערכת עובדים</h1>
+  <div id="insert">
+    <h2>פרטי עובד:</h2>
+  <!-- הוספת עובד -->
+  <input type="text" id="tz" placeholder="הכנס תז"/>
+  <br>
+  <input type="text" id="firstName" placeholder="הכנס שם"/>
+  <br>
+  <input type="text" id="lastName" placeholder="הכנס משפחה"/>
+  <br>
+  <input type="text" id="phone" placeholder="הכנס טלפון"/>
+  <br>
+  <input type="text" id="mail" placeholder="הכנס מייל"/>
+  <br>
+  <input type="text" id="address" placeholder="הכנס כתובת"/>
+  <br>
+  <input type="button" onclick="addWorker()" value="קליק להוספת עובד">
+  <br></div>
+  <div id="show">
+  <h2> הכנס ת"ז לקבלת פרטי עובד לעדכון או הצגה</h2>
+  <input type="text" id="Id" placeholder="הכנס תז"/>
+  <br>
+  <input type="button" onclick="getWorkerByID()" value="קליק להצגת עובד"><br>
+  <input type="button" onclick="remove()" value="למחיקת עובד"><br>
+  <input type="button" onclick="showToUpdate()" value="להצגת פרטי עובד לעדכון"><br>
+  <input type="button" onclick="UpdateW()" value="עדכן"><br>
+  <input type="button" value="לקבלת רשימת עובדים" onclick="getAll()"><br>
+  <div id="results"></div>
+  <div class="c">
+    <h3>נוכחות עובדים</h3>
+    <br>
+    <input type="text" id="IdP" placeholder="הכנס ת'ז" />
+    <br><br>
+    <input type="date" id="date" placeholder="תאריך" />
+    <br><br>
+    <input type="time" id="s" placeholder="שעת התחלה" />
+    <br><br>
+    <input type="time" id="e" placeholder="שעת סיום" />
+    <br><br>
+    <input type="button" onclick="addingHour()" value="הוספת השעות">
+    <br>
+</div>
+<div class="d">
+    <input type="text" id="lastID" placeholder="הכנס תז" />
+    <br><br>
+    <input type="button" onclick="showPresence()" value='לחץ לקבלת דוח נוכחות'>
+    <br>
+</div>
+<div id="block2"></div>
+
+</body>
+</html>
